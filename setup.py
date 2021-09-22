@@ -8,7 +8,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
 	name="ksiterate",
-	version="1.0",
+	version="1.1",
 	author="Konrad Sakowski",
 	description="Module for iteration over product of given parameter values",
 	long_description=long_description,
