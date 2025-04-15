@@ -61,10 +61,7 @@ class Iteration(object):
 
 			#print(columns);
 			#print(rows);
-			self.df = self.df.append(
-				pandas.DataFrame(rows, columns=columns),
-				ignore_index=True,
-			);
+			self.df = pandas.concat([self.df, pandas.DataFrame(rows, columns=columns)], ignore_index=True);
 
 		for key, vals in only.items():
 			self.df = self.df[self.df[key].isin(vals)];
